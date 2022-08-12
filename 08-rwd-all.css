@@ -1,0 +1,332 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 367px;
+    height: 100vh;
+    background-color: antiquewhite;
+    float: left;
+    padding-top: 75px;
+}
+
+main {
+    width: calc(100% - 367px);
+    height: 100vh;
+    background-color: pink;
+    float: right;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    background-color: plum;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.links {
+    margin: auto;
+    width: 150px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    color: brown;
+}
+
+.container {
+    width: 955px;
+    height: 570px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: plum;
+}
+
+.container>div {
+    width: 315px;
+    height: 570px;
+    background-color: antiquewhite;
+    float: left;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.x {
+    background-image: url('./img/皮卡丘.jpeg');
+    background-position: 50% 50%;
+}
+
+.x:hover {
+    background-size: 200%;
+    background-position: 40% 30%;
+}
+
+.y {
+    background-image: url('./img/皮卡丘1.jpg');
+    background-position: 30%;
+    margin: 0px 5px;
+}
+
+.y:hover {
+    background-size: 200%;
+    background-position: 40% 30%;
+}
+
+.z {
+    background-image: url('./img/皮卡丘2.jpg');
+    background-position: center;
+}
+
+.z:hover {
+    background-size: 200%;
+    background-position: 40% 30%;
+}
+
+@media(max-width:1400px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 367px;
+        height: 100vh;
+        background-color: antiquewhite;
+        float: left;
+        padding-top: 75px;
+    }
+
+    main {
+        width: calc(100% - 367px);
+        height: 100vh;
+        background-color: pink;
+        float: right;
+        position: relative;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        background-color: plum;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .links {
+        margin: auto;
+        width: 150px;
+    }
+
+    a {
+        display: unset;
+        text-align: center;
+        margin: 5px;
+        color: brown;
+    }
+
+    .container {
+        width: 800px;
+        height: 570px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: plum;
+    }
+
+    .container.x {
+        width: 800px;
+        height: 280px;
+        background-color: skyblue;
+        margin-bottom: 10px;
+    }
+
+    .container.y {
+        width: 395px;
+        height: 280px;
+        background-color: bisque;
+        float: left;
+        margin: 0px;
+    }
+
+    .container.z {
+        width: 395px;
+        height: 280px;
+        background-color: beige;
+        float: right;
+    }
+
+}
+
+@media (max-width:1200px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 100%;
+        height: 100px;
+        background-color: antiquewhite;
+        padding: 10px 35px;
+        float: unset;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        background-color: plum;
+        float: left;
+        margin: 0px;
+    }
+
+    .links {
+        float: right;
+        height: 100%;
+        margin: 0px;
+        width: unset;
+    }
+
+    a {
+        line-height: 80px;
+        margin-left: 40px;
+        color: brown;
+    }
+
+    main {
+        width: 100%;
+        padding: 50px 35px 75px;
+    }
+
+    .container {
+        width: 100%;
+        height: 800px;
+        background-color: plum;
+    }
+
+    .container .x {
+        width: 100%;
+        height: calc(50% - 5px);
+        background-color: pink;
+        margin-bottom: 10px;
+    }
+
+    .container .y {
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        background-color: skyblue;
+        float: left;
+    }
+
+    .container .z {
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        background-color: beige;
+        float: right;
+    }
+
+}
+
+@media(max-width:550px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        width: 100%;
+        height: 80px;
+        background-color: antiquewhite;
+        padding: 15px 18px;
+        position: relative;
+    }
+
+    .links {
+        width: 40px;
+        height: 55px;
+        background-color: plum;
+        float: left;
+    }
+
+    .links:hover {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    a {
+        display: none;
+        line-height: 24px;
+    }
+
+    .links:hover>a {
+        display: inline;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+        background-color: plum;
+        align-items: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main {
+        width: 100%;
+        min-height: calc(100% - 80px);
+        background-color: seashell;
+        padding: unset;
+
+    }
+
+    .container {
+        width: 100%;
+        height: calc(667px - 80px);
+        background-color: aqua;
+
+    }
+
+    .container.x {
+        width: 100%;
+        height: calc(100% / 3);
+        background-color: skyblue;
+        margin: 0px;
+        
+
+
+    }
+
+    .container .y {
+        width: 100%;
+        height: calc(100% / 3);
+        background-color: plum;
+        margin: 0px;
+
+
+    }
+
+    .container .z {
+        width: 100%;
+        height: calc(100% / 3);
+        background-color: wheat;
+        margin: 0px;
+    }
+
+}
